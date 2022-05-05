@@ -19,7 +19,7 @@
 </br>
     > *No exemplo abaixo, estou acessando a pasta "github", que está dentro de "estudos" que está no meu hd L:*
 
-    > ![exemplo](cdBash.png)
+    > ![exemplo](imgs\cdBash.png)
 
     > *Caso queira voltar para a pasta a anterior, use o comando: ```cd ..```*
 
@@ -48,7 +48,7 @@
     ```$ git status ``` 
    </br>
 
-    ![exemplo](gitStatusBash.png)
+    ![exemplo](imgs\gitStatusBash.png)
     </br>
 * Se quisermos resetar o stage/branch:
 </br>
@@ -64,18 +64,18 @@
 * Se você já criou repositório no Github, pule esta etapa. Caso ainda não tenha criado, vá até o seu perfil no [Github](https://github.com/):
  </br>
 
-    ![exemplo](profile.png) 
+    ![exemplo](imgs\profile.png) 
   
 * Procure por "repositories" e clique em no botão "new" verde, a direita:
 </br>
 
-    ![exemplo](gitHub.png)
+    ![exemplo](imgs\gitHub.png) 
 
 
 * Dê um nome ao seu repositório e lembre-se que o nome é o que descreve seu projeto. Clique em "create repository". Você deve ser redirecionado para uma página como essa. Utilize o comando destacado no print:
 </br>
 
-    ![exemplo](novoRepo.png)
+    ![exemplo](imgs\novoRepo.png)
     > *Ao inves de usar ctrl + v no terminal, use shift + insert!*
 
     > Este comando indica a origem para onde você está enviando remotamente seu commit.
@@ -86,7 +86,8 @@
 </br>
 
 * Como é um repositório novo e sua url é pública, por questões de segurança, você deve se autenticar. Clique em "sign in with your browser":
-    ![exemplo](perm.png)
+</br>
+    ![exemplo](imgs\perm.png)
 </br>
 
 * Você deve receber uma confirmação no próprio terminal do Bash e agora é só dar F5 na página do seu repositório, que os arquivos estarão lá! 
