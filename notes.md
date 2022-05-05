@@ -17,20 +17,20 @@
 ```$ cd nomeDoDiretorio```
 </br>
 </br>
-    > No exemplo abaixo, estou acessando a pasta "github", que está dentro de "estudos" que está no meu hd L:
+    > *No exemplo abaixo, estou acessando a pasta "github", que está dentro de "estudos" que está no meu hd L:*
 
-    > ![Oi](cdBash.png)
+    > ![exemplo](cdBash.png)
 
-    > Dica: caso queira voltar para a pasta a anterior, use o comando: ```cd ..```
+    > *Caso queira voltar para a pasta a anterior, use o comando: ```cd ..```*
 
 * Quando utilizarmos o comando:
   </br>
 ```$ git init```
   
   
-   Iremos criar um repositório do Git na pasta do seu projeto, com todas as configurações que ele irá precisar para funcionar. Caso queira visualizar o repositório, basta habilitar a opção "exibir itens ocultos" do seu explorador, mas **não altere nada nele.**
+   Será criado um repositório do Git na pasta do seu projeto, com todas as configurações que ele irá precisar para funcionar. Caso queira visualizar o repositório, basta habilitar a opção "exibir itens ocultos" do seu explorador, mas **não altere nada nele.**
 
-* Criado o repositório .git, precisamos identificar quais arquivos iremos enviar para o seu repositório lá no servidor do Github. Nessa etapa, os arquivos ficarão em "stage". Adicionar algo ao stage no git permite que você continue fazendo modificações no seu diretório de trabalho e, quando decidir que quer interagir com o controle de versão, permite que guarde as mudanças em pequenos commits.Utilize o comando: 
+* Criado o repositório .git, precisamos identificar quais arquivos iremos enviar para o seu repositório lá no servidor do Github, utilizando o comando:
 </br>
 
     ```$ git add nomeDoArquivo.extensao ``` - *para add 1 arquivo por vez.*
@@ -41,4 +41,60 @@
 
     ``` $ git add * ``` -  *para add todos os arquivos do diretório.*
 
+   Após essa etapa, os arquivos ficarão em **stage**, ou em estágio de preparação. Adicionar algo ao **stage** no git, permite que você continue fazendo modificações no seu diretório de trabalho e, quando decidir que quer interagir com o controle de versão, permite que guarde as mudanças em pequenos commits.
+
+   Para conferir o que tem no seu **stage**:
+   </br>
+    ```$ git status ``` 
+   </br>
+
+    ![exemplo](gitStatusBash.png)
+    </br>
+* Se quisermos resetar o stage/branch:
+</br>
+    ```$ git reset ``` 
+</br>
+
+* Agora estamos prontos para preparar os arquivos que estão em **stage**, pra poder enviar para o seu servidor no Github. Ou seja: **commitar**:
+</br>
+    ```$ git commit -m "nome do commit" ``` 
+</br>
+    > *Lembre-se que o nome do seu **commit** descreve a publicação que você está fazendo, seja descritivo, claro e objetivo*.
+
+* Se você já criou repositório no Github, pule esta etapa. Caso ainda não tenha criado, vá até o seu perfil no [Github](https://github.com/):
+ </br>
+
+    ![exemplo](profile.png) 
   
+* Procure por "repositories" e clique em no botão "new" verde, a direita:
+</br>
+
+    ![exemplo](gitHub.png)
+
+
+* Dê um nome ao seu repositório e lembre-se que o nome é o que descreve seu projeto. Clique em "create repository". Você deve ser redirecionado para uma página como essa. Utilize o comando destacado no print:
+</br>
+
+    ![exemplo](novoRepo.png)
+    > *Ao inves de usar ctrl + v no terminal, use shift + insert!*
+
+    > Este comando indica a origem para onde você está enviando remotamente seu commit.
+
+* Agora basta fazer o ```git push``` para "empurrar" seu commit para o local de origem que você indicou acima:
+</br>
+    ```$ git push -u origin master ``` 
+</br>
+
+* Como é um repositório novo e sua url é pública, por questões de segurança, você deve se autenticar. Clique em "sign in with your browser":
+    ![exemplo](perm.png)
+</br>
+
+* Você deve receber uma confirmação no próprio terminal do Bash e agora é só dar F5 na página do seu repositório, que os arquivos estarão lá! 
+
+
+
+
+
+
+
+
